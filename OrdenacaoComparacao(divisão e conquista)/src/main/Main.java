@@ -1,6 +1,8 @@
-package sorting;
+package main;
 
 import Comparacao_div_conq.QuickSort;
+import sorting.AbstractSorting;
+
 
 public class Main {
 	public static void main(String[] args) {
