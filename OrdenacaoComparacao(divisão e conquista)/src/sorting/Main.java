@@ -1,6 +1,9 @@
 package sorting;
 
-import Comparacao_div_conq.QuickSort;
+import comparacao_I.BubbleSort;
+import comparacao_I.InsertionSort;
+import comparacao_I.SelectionSort;
+import comparacao_II.QuickSort;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,7 +14,10 @@ public class Main {
 		Integer[] iguais = {6, 6, 6, 6, 6, 6};
 		
 		//AbstractSorting<Integer> implementation = new MergeSort<Integer>();
-		AbstractSorting<Integer> implementation = new QuickSort<Integer>();
+		//AbstractSorting<Integer> implementation = new QuickSort<Integer>();
+		AbstractSorting<Integer> implementation = new BubbleSort<Integer>();
+		//AbstractSorting<Integer> implementation = new InsertionSort<Integer>();
+		//AbstractSorting<Integer> implementation = new SelectionSort<Integer>();
 		
 		implementation.sort(par);
 		implementation.sort(impar);

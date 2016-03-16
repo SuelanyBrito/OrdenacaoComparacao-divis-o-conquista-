@@ -1,4 +1,4 @@
-package Comparacao_div_conq;
+package comparacao_II;
 
 import sorting.AbstractSorting;
 
@@ -6,10 +6,15 @@ public class MergeSort <T extends Comparable<T>> extends AbstractSorting<T>{
 
 		@Override
 		public void sort(T[] array, int leftIndex, int rightIndex) {
+			//Se left for menor que right
 			if(leftIndex < rightIndex){
+				// meio = = leftIndex + (rightIndex - leftIndex) / 2;
 				int meio = leftIndex + (rightIndex - leftIndex) / 2;
+				// sort(left, meio)
 				sort(array, leftIndex, meio);
+				//sort(meio+1, right)
 				sort(array, meio+1, rightIndex);
+				// merge
 				merge(array, leftIndex, rightIndex, meio);
 			}
 		}

@@ -1,6 +1,6 @@
 package main;
 
-import Comparacao_div_conq.QuickSort;
+import comparacao_II.QuickSort;
 import sorting.AbstractSorting;
 
 
